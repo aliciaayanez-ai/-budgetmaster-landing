@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetMaster - Take Control of Your Expenses</title>
+    <meta name="description" content="Transform your finances with intelligent budgeting and personalized savings strategies">
+    <meta property="og:title" content="BudgetMaster - Smart Budgeting App">
+    <meta property="og:description" content="Unlock potential savings and take control of your financial future">
+    <meta property="og:image" content="APP_MOCKUP_IMAGE_URL">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        :root {
+            --primary-blue: #2C7BE5;
+            --secondary-green: #48BB78;
+            --text-dark: #2D3748;
+            --background-light: #F7FAFC;
+        }
+        /* ... rest of your CSS ... */
+    </style>
+</head>
+<body>
+    <!-- ... your HTML content ... -->
+</body>
+</html>
