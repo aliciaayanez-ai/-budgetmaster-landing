@@ -76,9 +76,16 @@
             max-width: 600px;
             width: 100%;
             margin: 30px auto;
-            background: url('APP_MOCKUP_IMAGE_URL') no-repeat center;
-            background-size: contain;
             height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image svg {
+            width: 100%;
+            height: 100%;
+            max-width: 500px;
         }
 
         .cta-button {
@@ -192,7 +199,59 @@
             <h1>Take Control of Your Expenses</h1>
             <h2>Navigate Your Financial Future with Confidence</h2>
             
-            <div class="hero-image"></div>
+            <div class="hero-image">
+                <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Phone mockup -->
+                    <rect x="150" y="50" width="200" height="300" rx="20" fill="#2C7BE5" stroke="#1A5FBF" stroke-width="3"/>
+                    <rect x="160" y="70" width="180" height="260" rx="10" fill="white"/>
+                    
+                    <!-- Screen content - colorful bars (budget categories) -->
+                    <rect x="170" y="90" width="120" height="15" rx="7" fill="#FF6B9D"/>
+                    <text x="295" y="102" font-size="12" fill="#2D3748" font-weight="bold">$450</text>
+                    
+                    <rect x="170" y="120" width="90" height="15" rx="7" fill="#FFA94D"/>
+                    <text x="265" y="132" font-size="12" fill="#2D3748" font-weight="bold">$320</text>
+                    
+                    <rect x="170" y="150" width="140" height="15" rx="7" fill="#48BB78"/>
+                    <text x="315" y="162" font-size="12" fill="#2D3748" font-weight="bold">$580</text>
+                    
+                    <rect x="170" y="180" width="70" height="15" rx="7" fill="#9F7AEA"/>
+                    <text x="245" y="192" font-size="12" fill="#2D3748" font-weight="bold">$200</text>
+                    
+                    <!-- Cute piggy bank -->
+                    <circle cx="250" cy="250" r="35" fill="#FF6B9D"/>
+                    <ellipse cx="250" cy="248" rx="38" ry="32" fill="#FF8DB3"/>
+                    <circle cx="240" cy="240" r="4" fill="#2D3748"/>
+                    <circle cx="260" cy="240" r="4" fill="#2D3748"/>
+                    <ellipse cx="250" cy="255" rx="8" ry="6" fill="#FF6B9D"/>
+                    <ellipse cx="215" cy="265" rx="8" ry="12" fill="#FF6B9D"/>
+                    <ellipse cx="285" cy="265" rx="8" ry="12" fill="#FF6B9D"/>
+                    <rect x="240" y="280" width="10" height="15" rx="3" fill="#FF6B9D"/>
+                    <rect x="260" y="280" width="10" height="15" rx="3" fill="#FF6B9D"/>
+                    
+                    <!-- Coin going into piggy bank -->
+                    <circle cx="250" cy="210" r="12" fill="#FFA94D" stroke="#FF8C00" stroke-width="2"/>
+                    <text x="245" y="217" font-size="14" fill="#2D3748" font-weight="bold">$</text>
+                    
+                    <!-- Floating coins around -->
+                    <circle cx="100" cy="150" r="20" fill="#48BB78" opacity="0.8"/>
+                    <text x="90" y="158" font-size="18" fill="white" font-weight="bold">$</text>
+                    
+                    <circle cx="400" cy="200" r="18" fill="#9F7AEA" opacity="0.8"/>
+                    <text x="391" y="207" font-size="16" fill="white" font-weight="bold">$</text>
+                    
+                    <circle cx="80" cy="280" r="15" fill="#FFA94D" opacity="0.8"/>
+                    <text x="73" y="286" font-size="14" fill="white" font-weight="bold">$</text>
+                    
+                    <circle cx="420" cy="300" r="22" fill="#FF6B9D" opacity="0.8"/>
+                    <text x="409" y="308" font-size="20" fill="white" font-weight="bold">$</text>
+                    
+                    <!-- Sparkles -->
+                    <polygon points="350,100 355,110 365,110 357,117 360,127 350,120 340,127 343,117 335,110 345,110" fill="#FFA94D"/>
+                    <polygon points="120,200 123,206 130,206 125,211 127,218 120,213 113,218 115,211 110,206 117,206" fill="#48BB78"/>
+                    <polygon points="380,120 383,125 389,125 385,129 387,135 380,131 373,135 375,129 371,125 377,125" fill="#9F7AEA"/>
+                </svg>
+            </div>
 
             <h3>Transform Your Finances in Just 30 Days</h3>
             <p>🎯 Unlock Potential Savings of Up to 20%<br>💰 Smart Budgeting, Zero Stress</p>
@@ -210,44 +269,3 @@
                     <p>Automatically categorize and analyze your spending</p>
                 </div>
                 <div class="feature-item">
-                    <h3>🚦 Personalized Financial Nudges</h3>
-                    <p>Daily smart recommendations tailored to your spending</p>
-                </div>
-                <div class="feature-item">
-                    <h3>📊 Customized Savings Strategies</h3>
-                    <p>Machine learning algorithms that understand your finances</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="signup" class="faq">
-        <div class="container">
-            <h2>Join 10,000+ Early Adopters</h2>
-            <form class="email-form" action="https://formspree.io/f/xpwyrgye" method="POST">
-                <input type="email" name="email" placeholder="Enter your email" required>
-                <button type="submit">Join Waitlist</button>
-            </form>
-            <p class="success-message" id="successMessage">✅ Thanks! You're on the list!</p>
-            <p>🔒 100% Private. 0% Spam. Unsubscribe anytime.</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© 2023 BudgetMaster. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
