@@ -1,0 +1,243 @@
+Here's the complete, standalone HTML and CSS code for the BudgetMaster landing page:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetMaster - Take Control of Your Expenses</title>
+    <meta name="description" content="Transform your finances with intelligent budgeting and personalized savings strategies">
+    <meta property="og:title" content="BudgetMaster - Smart Budgeting App">
+    <meta property="og:description" content="Unlock potential savings and take control of your financial future">
+    <meta property="og:image" content="APP_MOCKUP_IMAGE_URL">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        :root {
+            --primary-blue: #2C7BE5;
+            --secondary-green: #48BB78;
+            --text-dark: #2D3748;
+            --background-light: #F7FAFC;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--background-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            background: linear-gradient(135deg, #F7FAFC 0%, #EDF2F7 100%);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--primary-blue);
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .hero-image {
+            max-width: 600px;
+            width: 100%;
+            margin: 30px auto;
+            background: url('APP_MOCKUP_IMAGE_URL') no-repeat center;
+            background-size: contain;
+            height: 400px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #1A5FBF;
+        }
+
+        .features, .benefits, .faq {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .benefits-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .email-form {
+            max-width: 500px;
+            margin: 30px auto;
+            display: flex;
+        }
+
+        .email-form input {
+            flex-grow: 1;
+            padding: 15px;
+            border: 1px solid #CBD5E0;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .email-form button {
+            background-color: var(--primary-blue);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        footer {
+            background-color: var(--text-dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            .feature-grid, .benefits-list {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">BudgetMaster</div>
+            <nav>
+                <a href="#features" class="cta-button">Learn More</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Take Control of Your Expenses</h1>
+            <h2>Navigate Your Financial Future with Confidence</h2>
+            
+            <div class="hero-image"></div>
+
+            <h3>Transform Your Finances in Just 30 Days</h3>
+            <p>🎯 Unlock Potential Savings of Up to 20%<br>💰 Smart Budgeting, Zero Stress</p>
+            
+            <a href="#signup" class="cta-button">Get Early Access Now</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>How BudgetMaster Works</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>🔍 Intelligent Expense Tracking</h3>
+                    <p>Automatically categorize and analyze your spending</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🚦 Personalized Financial Nudges</h3>
+                    <p>Daily smart recommendations tailored to your spending</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📊 Customized Savings Strategies</h3>
+                    <p>Machine learning algorithms that understand your finances</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="signup" class="faq">
+        <div class="container">
+            <h2>Join 10,000+ Early Adopters</h2>
+            <form class="email-form" action="#" method="POST">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Join Waitlist</button>
+            </form>
+            <p>🔒 100% Private. 0% Spam. Unsubscribe anytime.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 BudgetMaster. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+```
